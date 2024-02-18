@@ -49,7 +49,7 @@ function playRound(playerSelection, computerSelection) {
             switch (playerSelection.toLowerCase()) {
                 case "rock":
                     yourScore++;
-                    return "The computer chose rock. You win! Paper beats rock.";
+                    return "The computer chose scissors. You win! Rock beats scissors.";
                 case "paper":
                     computerScore++;
                     return "The computer chose scissors. You lose! Scissors beats paper.";
