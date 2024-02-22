@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: sans-serif;
+  font-size: 14px;
+  height: 100vh;
+}
+
+p, #score, #play-area {
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+#play-area .right-container button {
+  cursor: auto;
+}
+
+#buttons,
+#play-area .right-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#buttons button,
+#play-area .right-container button {
+  border: none;
+  background: none;
+  background-size: cover;
+  font-size: 0;
+  height: 64px;
+  width: 64px;
+}
+
+#buttons button.rock, 
+#play-area .right-container button.rock {
+  background-image: url('img/rock.png');
+}
+
+#buttons button.paper,
+#play-area .right-container button.paper {
+  background-image: url('img/paper.png');
+}
+
+#buttons button.scissors,
+#play-area .right-container button.scissors {
+  background-image: url('img/scissors.png');
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+#score {
+  display: flex;
+  width: 75vw;
+}
+
+#play-area {
+  display: flex;
+  border: 1px dashed #000;
+  padding: 40px 0;
+  width: 75vw;
+}
+
+#play-area .right-container {
+  border-left: 1px dashed #000;
+}
+
+.left-container, .right-container {
+  text-align: center;
+  width: 50%;
+}
+
+.reset {
+  position: absolute;
+  border: 0;
+  background: #51b2d7;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.fade-out {
+  opacity: .2;
+  transition: opacity .4s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+.small {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 20px;
+}

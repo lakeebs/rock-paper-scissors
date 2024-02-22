@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors!</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Open the console to see the results!</h2>
+  <div id="main">
+    <div id="score">
+      <div class="left-container">You: <span class="your-score"></span></div>
+      <div class="right-container">Computer: <span class="computer-score"></span></div>
+    </div>
+    <div id="play-area">
+      <div class="left-container">
+        <div id="buttons">
+          <button type="button" class="choice rock">Rock</button>
+          <button type="button" class="choice paper">Paper</button>
+          <button type="button" class="choice scissors">Scissors</button>
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+    <p id="results"></p>
+  </div>
+
+  <p class="small">Icons by <a href="https://www.flaticon.com">Flaticon.com</a></p>
+
+  <script src="script.js"></script>
 </body>
 </html>
