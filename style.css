@@ -15,6 +15,10 @@ p, #score, #play-area {
   margin-bottom: 10px;
 }
 
+#score {
+  font-weight: bold;
+}
+
 button {
   cursor: pointer;
   padding: 5px 10px;
