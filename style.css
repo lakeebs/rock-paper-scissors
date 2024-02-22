@@ -107,22 +107,18 @@ h3 {
 }
 
 .reset {
-  position: absolute;
-  border: 0;
-  background: #51b2d7;
-  color: #fff;
+  border: 1px dashed #000;
+  background: #fff;
   border-radius: 3px;
   padding: 10px 15px;
 }
 
-.fade-out {
-  opacity: .2;
-  transition: opacity .4s ease;
+.hide {
+  opacity: 0;
 }
 
-.fade-in {
+.show {
   opacity: 1;
-  transition: opacity .4s ease;
 }
 
 .small {

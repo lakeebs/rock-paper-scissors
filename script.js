@@ -42,12 +42,12 @@ function buttonClick(e) {
 
   buttons.forEach(button => {
     if (button !== clickedButton) {
-      button.classList.add('fade-out');
-      button.classList.remove('fade-in');
+      button.classList.add('hide');
+      button.classList.remove('show');
       setTimeout(() => {
-        button.classList.remove('fade-out');
-        button.classList.add('fade-in');
-      }, 500); // Remove the class after .5 seconds
+        button.classList.remove('hide');
+        button.classList.add('show');
+      }, 1000); // Remove the class after .5 seconds
     }
   });
 
@@ -71,9 +71,6 @@ function buttonClick(e) {
       // Append reset button
       resetButton.textContent = "Play again?";
       resetButton.classList.add('reset');
-      document.querySelector('#score').classList.add('fade-out');
-      document.querySelector('#play-area').classList.add('fade-out');
-      document.querySelector('#results').classList.add('fade-out');
       resetButton.addEventListener('click', () => {
         enableButtons(); // Enable buttons when reset is clicked
         yourScore = 0;
@@ -82,12 +79,6 @@ function buttonClick(e) {
         yourScoreBox.textContent = 0;
         computerScoreBox.textContent = 0;
         results.innerHTML = '&nbsp;';
-        document.querySelector('#score').classList.remove('fade-out');
-        document.querySelector('#play-area').classList.remove('fade-out');
-        document.querySelector('#results').classList.remove('fade-out');
-        document.querySelector('#score').classList.add('fade-in');
-        document.querySelector('#play-area').classList.add('fade-in');
-        document.querySelector('#results').classList.add('fade-in');
         resetButton.remove();
       });
 
