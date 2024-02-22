@@ -24,12 +24,19 @@ button {
   padding: 5px 10px;
 }
 
+h1, h3 {
+  text-align: center;
+}
+
 h1 {
-  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: .5em;
 }
 
 h3 {
-  margin-bottom: 40px;
+  font-size: 1.2em;
+  font-weight:300;
+  margin-bottom: 2.2em;
 }
 
 #play-area .right-container button {
