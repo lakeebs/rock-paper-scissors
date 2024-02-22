@@ -33,7 +33,9 @@ button {
 #play-area .right-container button {
   border: none;
   background: none;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 0;
   height: 64px;
   width: 64px;
@@ -62,16 +64,15 @@ button {
   height: inherit;
 }
 
-#score {
+#score, #play-area, #results {
   display: flex;
+  justify-content: center;
   width: 75vw;
 }
 
 #play-area {
-  display: flex;
   border: 1px dashed #000;
   padding: 40px 0;
-  width: 75vw;
 }
 
 #play-area .right-container {
