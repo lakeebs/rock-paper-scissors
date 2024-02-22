@@ -123,12 +123,12 @@ function playRound(playerSelection, computerSelection) {
             switch (playerSelection) {
                 case "Rock":
                     computerScore++;
-                    return "The computer chose paper. You lose! Paper beats rock.";
+                    return "You lose! Paper beats rock.";
                 case "Scissors":
                     yourScore++;
-                    return "The computer chose paper. You win! Scissors beats paper.";
+                    return "You win! Scissors beats paper.";
                 case "Paper":
-                    return "You and the computer both chose paper. Tie!";
+                    return "Tie!";
                 default:
                     return "Hmm, looks like something went wrong.";
             }
@@ -137,12 +137,12 @@ function playRound(playerSelection, computerSelection) {
             switch (playerSelection) {
                 case "Paper":
                     yourScore++;
-                    return "The computer chose rock. You win! Paper beats rock.";
+                    return "You win! Paper beats rock.";
                 case "Scissors":
                     computerScore++;
-                    return "The computer chose rock. You lose! Rock beats scissors.";
+                    return "You lose! Rock beats scissors.";
                 case "Rock":
-                    return "You and the computer both chose rock. Tie!";
+                    return "Tie!";
                 default:
                     return "Hmm, looks like something went wrong.";
             }
@@ -151,12 +151,12 @@ function playRound(playerSelection, computerSelection) {
             switch (playerSelection) {
                 case "Rock":
                     yourScore++;
-                    return "The computer chose scissors. You win! Rock beats scissors.";
+                    return "You win! Rock beats scissors.";
                 case "Paper":
                     computerScore++;
-                    return "The computer chose scissors. You lose! Scissors beats paper.";
+                    return "You lose! Scissors beats paper.";
                 case "Scissors":
-                    return "You and the computer both chose scissors. Tie!";
+                    return "Tie!";
                 default:
                     return "Hmm, looks like something went wrong.";
             }
