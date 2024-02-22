@@ -88,7 +88,7 @@ h3 {
 #score, #play-area, #results {
   display: flex;
   justify-content: center;
-  width: 75vw;
+  width: 90vw;
 }
 
 #play-area {
