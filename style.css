@@ -125,6 +125,16 @@ h3 {
   opacity: 1;
 }
 
+.fade-out {
+  opacity: .1;
+  transition: opacity .5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
 .small {
   font-size: 11px;
   text-align: center;

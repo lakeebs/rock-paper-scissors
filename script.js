@@ -71,6 +71,8 @@ function buttonClick(e) {
       // Append reset button
       resetButton.textContent = "Play again?";
       resetButton.classList.add('reset');
+      document.querySelector('#play-area').classList.remove('fade-in');
+      document.querySelector('#play-area').classList.add('fade-out');
       resetButton.addEventListener('click', () => {
         enableButtons(); // Enable buttons when reset is clicked
         yourScore = 0;
@@ -79,6 +81,8 @@ function buttonClick(e) {
         yourScoreBox.textContent = 0;
         computerScoreBox.textContent = 0;
         results.innerHTML = '&nbsp;';
+        document.querySelector('#play-area').classList.remove('fade-out');
+        document.querySelector('#play-area').classList.add('fade-in');
         resetButton.remove();
       });
 
