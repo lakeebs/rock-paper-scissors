@@ -12,7 +12,6 @@ let yourScore = 0;
 
 yourScoreBox.textContent = 0;
 computerScoreBox.textContent = 0;
-results.innerHTML = '&nbsp;';
 
 // Function to disable buttons
 function disableButtons() {
@@ -77,10 +76,10 @@ function buttonClick(e) {
         enableButtons(); // Enable buttons when reset is clicked
         yourScore = 0;
         computerScore = 0;
-        results.textContent = "";
+        computerBox.innerHTML = "";
+        results.textContent = "Choose your weapon";
         yourScoreBox.textContent = 0;
         computerScoreBox.textContent = 0;
-        results.innerHTML = '&nbsp;';
         document.querySelector('#play-area').classList.remove('fade-out');
         document.querySelector('#play-area').classList.add('fade-in');
         resetButton.remove();
