@@ -25,6 +25,7 @@ button {
 }
 
 h1, h3 {
+  max-width: 90vw;
   text-align: center;
 }
 
