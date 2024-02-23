@@ -36,21 +36,20 @@ function buttonClick(e) {
     return; // If game is over, return early
   }
 
-  const clickedButton = e.target;
-  const allButtons = document.querySelectorAll('button');
-
-  buttons.forEach(button => {
-    if (button !== clickedButton) {
-      button.classList.add('hide');
-      button.classList.remove('show');
-      setTimeout(() => {
-        button.classList.remove('hide');
-        button.classList.add('show');
-      }, 1000); // Remove the class after .5 seconds
-    }
-  });
-
   if (e.target.matches('button')) {
+    const clickedButton = e.target;
+
+    buttons.forEach(button => {
+      if (button !== clickedButton) {
+        button.classList.add('hide');
+        button.classList.remove('show');
+        setTimeout(() => {
+          button.classList.remove('hide');
+          button.classList.add('show');
+        }, 1000); // Remove the class after .5 seconds
+      }
+    });
+
     const playerSelection = e.target.textContent;
     const computerSelection = getComputerChoice();
     const roundResult = playRound(playerSelection, computerSelection); 
@@ -87,6 +86,8 @@ function buttonClick(e) {
 
       document.querySelector('#main').appendChild(resetButton);
     }
+  } else {
+    return;
   }
 }
 
