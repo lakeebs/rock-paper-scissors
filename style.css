@@ -122,6 +122,15 @@ h3 {
   text-transform: uppercase;
 }
 
+.reset:hover {
+  background-color: #f4f4f4;
+}
+
+.reset:active {
+  background-color: #17a9fd;
+  color: #fff;
+}
+
 .hide {
   opacity: 0;
 }
